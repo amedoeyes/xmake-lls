@@ -1,6 +1,6 @@
 ---@meta
 
-local table = {}
+table = {}
 
 ---@param ... any
 ---@return table
