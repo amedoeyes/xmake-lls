@@ -12,6 +12,10 @@ function string:deserialize() end
 ---@return string
 function string:encode() end
 
+---@param substr string
+---@return boolean
+function string:endswith(substr) end
+
 ---@param pattern string
 ---@param plain boolean
 ---@return integer
@@ -39,6 +43,10 @@ function string:rtrim(trimchars) end
 ---@param opt table?
 ---@return table
 function string:split(delimiter, opt) end
+
+---@param substr string
+---@return boolean
+function string:startswith(substr) end
 
 ---@param trimchars any
 ---@return string
