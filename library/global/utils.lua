@@ -4,11 +4,10 @@ utils = {}
 
 ---@param binaryfile string
 ---@param outputfile string
----@param opt table
----@return boolean, string
+---@param opt table?
 function utils.bin2c(binaryfile, outputfile, opt) end
 
----@param opt table
+---@param opt table?
 ---@return boolean
 function utils.confirm(opt) end
 
@@ -16,16 +15,16 @@ function utils.confirm(opt) end
 ---@return any ...
 function utils.dump(...) end
 
----@param script any
----@param traceback any
+---@param script function?
+---@param traceback function?
 ---@param ... any
----@return boolean
+---@return boolean, any, any ...
 function utils.trycall(script, traceback, ...) end
 
----@param value any
----@param format string|nil
+---@param value boolean
+---@param format string?
 ---@param ... any
----@return any
+---@return boolean
 function utils.assert(value, format, ...) end
 
 ---@param format string
