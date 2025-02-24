@@ -1,8 +1,5 @@
 ---@meta
 
----@alias ToolchainName string|"armcc"|"armclang"|"c51"|"circle"|"clang"|"clang-12"|"clang-13"|"clang-14"|"clang-15"|"clang-16"|"clang-17"|"clang-18"|"clang-19"|"clang-20"|"clang-cl"|"cosmocc"|"cross"|"cuda"|"dlang"|"dmd"|"dpcpp"|"emcc"|"envs"|"fasm"|"fpc"|"gcc"|"gcc-8"|"gcc-9"|"gcc-10"|"gcc-11"|"gcc-12"|"gcc-13"|"gcc-14"|"gcc-4.8"|"gcc-4.9"|"gdc"|"gfortran"|"gnu-rm"|"go"|"hdk"|"icc"|"icx"|"ifort"|"ifx"|"iverilog"|"ldc"|"llvm"|"masm32"|"mingw"|"msvc"|"muslcc"|"nasm"|"ndk"|"nim"|"rust"|"sdcc"|"swift"|"tinycc"|"verilator"|"wasi"|"xcode"|"yasm"|"zig"
----@alias ToolKind string|"cc"|"cxx"|"cpp"|"ld"|"sh"|"ar"|"mrc"|"strip"|"ranlib"|"objcopy"|"dsymutil"|"mm"|"mxx"|"as"|"sc"|"scld"|"scsh"|"gc"|"gcld"|"gcar"|"dc"|"dcld"|"dcsh"|"dcar"|"rc"|"rcld"|"rcsh"|"rcar"|"fc"|"fcld"|"fcsh"|"zc"|"zcld"|"zcsh"|"zcar"|"cu"|"culd"|"cuccbin"|"nc"|"ncld"|"ncsh"|"ncar",
-
 ---@class Toolchain
 local Toolchain = {}
 
