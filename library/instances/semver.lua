@@ -1,79 +1,79 @@
 ---@meta
 
----@class Semver
-local Semver = {}
+---@class SemVer
+local SemVer = {}
 
 ---@param name string
 ---@return any
-function Semver:get(name) end
+function SemVer:get(name) end
 
 ---@return integer
-function Semver:major() end
+function SemVer:major() end
 
 ---@return integer
-function Semver:minor() end
+function SemVer:minor() end
 
 ---@return integer
-function Semver:patch() end
+function SemVer:patch() end
 
 ---@return table
-function Semver:build() end
+function SemVer:build() end
 
 ---@return table
-function Semver:prerelease() end
+function SemVer:prerelease() end
 
 ---@return string
-function Semver:rawstr() end
+function SemVer:rawstr() end
 
 ---@return string
-function Semver:shortstr() end
+function SemVer:shortstr() end
 
 ---@param version string
 ---@return boolean
-function Semver:satisfies(version) end
+function SemVer:satisfies(version) end
 
----@param version1 Semver|string
----@param version2 Semver|string
+---@param version1 SemVer|string
+---@param version2 SemVer|string
 ---@return boolean
-function Semver:at(version1, version2) end
+function SemVer:at(version1, version2) end
 
 ---@param ... any
 ---@return string
-function Semver:sub(...) end
+function SemVer:sub(...) end
 
 ---@param ... any
 ---@return string
-function Semver:gsub(...)
+function SemVer:gsub(...)
 	return self:rawstr():gsub(...)
 end
 
 ---@param ... any
 ---@return string[]
-function Semver:split(...) end
+function SemVer:split(...) end
 
 ---@param ... any
 ---@return boolean
-function Semver:startswith(...) end
+function SemVer:startswith(...) end
 
 ---@param ... any
 ---@return boolean
-function Semver:endswith(...) end
+function SemVer:endswith(...) end
 
----@param version Semver|string
-function Semver:eq(version) end
+---@param version SemVer|string
+function SemVer:eq(version) end
 
----@param version Semver|string
+---@param version SemVer|string
 ---@return boolean
-function Semver:lt(version) end
+function SemVer:lt(version) end
 
----@param version Semver|string
+---@param version SemVer|string
 ---@return boolean
-function Semver:le(version) end
+function SemVer:le(version) end
 
----@param version Semver|string
+---@param version SemVer|string
 ---@return boolean
-function Semver:gt(version) end
+function SemVer:gt(version) end
 
----@param version Semver|string
+---@param version SemVer|string
 ---@return boolean
-function Semver:ge(version) end
+function SemVer:ge(version) end
