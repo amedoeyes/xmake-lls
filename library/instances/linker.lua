@@ -24,3 +24,9 @@ function Linker:linkcmd(objectfiles, targetfile, opt) end
 ---@param opt table?
 ---@return string[]
 function Linker:linkflags(opt) end
+
+---@param targetkind TargetKind
+---@param sourcekinds SourceKind|SourceKind[]
+---@param target Target
+---@return Linker?, string?
+function Linker.load(targetkind, sourcekinds, target) end

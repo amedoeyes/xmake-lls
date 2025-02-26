@@ -31,8 +31,12 @@ function Compiler:add(name, ...) end
 function Compiler:extraconf(name, item, key) end
 
 ---@param name string
----@param item string
----@param key string
+---@param item string|any
+---@param key string|any
 ---@param value any
----@return any
 function Compiler:extraconf_set(name, item, key, value) end
+
+---@param sourcekind SourceKind
+---@param target Target
+---@return Compiler?, string?
+function Compiler.load(sourcekind, target) end
